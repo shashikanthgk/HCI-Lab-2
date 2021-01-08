@@ -162,6 +162,6 @@ dict = { "Yak": 0, "Horse": 1, "Panda": 2, "Lion": 3, "Tiger": 4, "Kangaroo": 5,
   }
   restart()
   {
-    this.router.navigateByUrl("/home")
+    window.location.reload()
   }
 }
