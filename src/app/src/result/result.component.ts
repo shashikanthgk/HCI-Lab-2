@@ -87,9 +87,22 @@ export class ResultComponent implements OnInit {
   ];
 
 
-  dict = { "Yak": 0, "Horse": 1, "Panda": 2, "Lion": 3, "Tiger": 4, "Kangaroo": 5, "Monkey": 6, "Cat": 7 }
+
+
+dict = { "Yak": 0, "Horse": 1, "Panda": 2, "Lion": 3, "Tiger": 4, "Kangaroo": 5, "Monkey": 6, "Cat": 7 }
   constructor() { }
   ngOnInit(): void {
+
+    let map = new Map<string, number>();
+    map.set("Yak",0);
+    map.set("Horse", 1)
+    map.set( "Panda",2)
+    map.set("Lion",3)
+    map.set("Tiger", 4)
+    map.set("Kangaroo",5)
+    map.set("Monkey", 6);
+    map.set("Cat",7)
+
     console.log(this.selected_animal)
     console.log(this.animal_name)
 
@@ -98,8 +111,8 @@ export class ResultComponent implements OnInit {
     for (let i = 0; i < this.animal_name.length; i++) {
       if (this.selected_animal[i]) {
 
-        let x: String = this.animal_name[i].name
-        let index = this.dict[x];
+        let x: string = this.animal_name[i].name
+        let index = map.get(x);
 
         if (index == null)
           continue
