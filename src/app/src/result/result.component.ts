@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-result',
@@ -90,7 +91,7 @@ export class ResultComponent implements OnInit {
 
 
 dict = { "Yak": 0, "Horse": 1, "Panda": 2, "Lion": 3, "Tiger": 4, "Kangaroo": 5, "Monkey": 6, "Cat": 7 }
-  constructor() { }
+  constructor(private router:Router) { }
   ngOnInit(): void {
 
     let map = new Map<string, number>();
@@ -161,6 +162,6 @@ dict = { "Yak": 0, "Horse": 1, "Panda": 2, "Lion": 3, "Tiger": 4, "Kangaroo": 5,
   }
   restart()
   {
-    window.location.reload()
+    this.router.navigateByUrl("/home")
   }
 }
