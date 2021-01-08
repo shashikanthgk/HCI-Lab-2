@@ -1,0 +1,131 @@
+
+.animal-section{
+    padding: 2rem;
+    padding-right: 2rem;
+    margin: 1vw;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 8px 8px 4px -1px rgb(70, 68, 68), 
+    0 1px 1px 0 rgba(0,0,0,1), 
+    0 1px 3px 0 rgba(0,0,0,1);
+}
+
+.animal-section:hover{
+    transform: scale(1.06);
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+
+   .inst2{
+   
+       margin: 1rem;   
+       padding: 1rem;
+       padding-right: 2rem;
+       font-size: 1.2rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       font-family: 'Bree Serif', serif;
+       background-color: rgb(224, 115, 166);
+   box-shadow: 8px 8px 4px -1px rgb(70, 68, 68), 
+   0 1px 1px 0 rgba(0,0,0,1), 
+   0 1px 3px 0 rgba(0,0,0,1);
+   }
+
+.animal-list{
+    font-family: 'Bree Serif', serif;
+    padding: 1rem;
+    list-style-type:none;
+    display: flex;
+    justify-content:space-around ;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: cadetblue;
+}
+
+.box-container
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: initial;
+}
+
+li{
+    white-space: nowrap;
+    padding:0.4rem;
+    word-wrap: break-word;
+    white-space: initial;
+
+}
+
+
+.inst{
+
+    margin: 2rem;   
+    padding: 1rem;
+    padding-right: 2.3rem;
+    background-color: rgb(223, 191, 132);
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    white-space: initial;
+   width: 60%;
+   font-family: 'Bree Serif', serif;
+   box-shadow: 8px 8px 4px -1px rgb(70, 68, 68), 
+   0 1px 1px 0 rgba(0,0,0,1), 
+   0 1px 3px 0 rgba(0,0,0,1);
+   
+   }
+   
+   
+   .inst:hover{
+       transform: scale(1.06);
+       transition: all 1s ease-in-out 0.1s;
+   }
+   
+   .inst2{
+   
+       margin: 1rem;   
+       padding: 1rem;
+       padding-right: 2rem;
+       font-size: 1.2rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       font-family: 'Bree Serif', serif;
+       background-color: rgb(224, 115, 166);
+   box-shadow: 8px 8px 4px -1px rgb(70, 68, 68), 
+   0 1px 1px 0 rgba(0,0,0,1), 
+   0 1px 3px 0 rgba(0,0,0,1);
+   }
+
+   .timer{
+    font-family: 'Bree Serif', serif;
+
+    color:blue;font-size:1.5rem;font-weight:600
+   }
+
+   .in-timer{
+   
+   color: black;
+
+   }
+
+   .timer-out
+   {
+    margin: 2rem;
+    background-color: rgb(224, 115, 166);
+    box-shadow: 8px 8px 4px -1px rgb(70, 68, 68), 
+    0 1px 1px 0 rgba(0,0,0,1), 
+    0 1px 3px 0 rgba(0,0,0,1);
+   }

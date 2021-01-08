@@ -1,0 +1,50 @@
+<div *ngIf="!toggle">
+    <div id="main">
+        <div id='first'>
+            <!-- first page for starting the game  -->
+            <mat-card style="display: flex;flex-direction: column;align-items: center;" class="first">
+
+                <div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
+                    <mat-card class="inst">
+                        <!-- instruction for the user  -->
+                        <ul>
+                            <li>
+                                On the nst screen you will be shown some set animals name
+                            </li>
+                            <li>
+                                Try to remember set visually and mentally
+                            </li>
+                            <li>
+                                You will have only 10 seconds to remember them, after 8 second the screen will
+                                automatically
+                                move to the next task
+                            </li>
+                            <li>
+                                the timer that shown on top will be the time elapsed
+                            </li>
+                            <li>
+                                When your ready click on the start button
+                            </li>
+                            <li>
+                                Once clicked you will not be able to come back to the previous page till the experiment
+                                is
+                                over
+                            </li>
+                        </ul>
+                    </mat-card>
+                </div>
+
+                <div>
+                    <button class="glow-on-hover" type="button" (click)="start()">START THE GAME!</button>
+                </div>
+            </mat-card>
+
+
+
+        </div>
+
+    </div>
+</div>
+<div *ngIf="toggle">
+    <app-animal-list></app-animal-list>
+</div>

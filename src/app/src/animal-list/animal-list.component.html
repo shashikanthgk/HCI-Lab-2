@@ -1,0 +1,64 @@
+<div *ngIf="!toggle">
+
+    <mat-card class="top">
+
+        <div class="box-container">
+
+            <mat-card class="inst" style="width: 50%;">
+                <!-- instruction for the user  -->
+                <ul>
+                    <li>
+                        Remember the words given in the right side of the screen
+                    </li>
+                    <li>
+                        You have the time untill timer becomes zero
+                    </li>
+                </ul>
+
+            </mat-card>
+            <mat-card class="timer-out">
+                <div class="timer">
+                    <!-- timer positon -->
+                    <span> TIME STARTS NOW :<span class="in-timer"> {{timeLeft}}/10 </span> </span>
+                </div>
+            </mat-card>
+            <mat-card class="animal-section" style="width: 70%;">
+                <!-- this section contains the main section list -->
+                <ul class="animal-list" style="padding-top: 2rem;">
+
+                    <li style="color: blue;">
+                        Yak
+                    </li>
+                    <li style="color: brown;">
+                        Horse
+                    </li>
+                    <li style="color:darkcyan;">
+                        Panda
+                    </li>
+                    <li style="color: chocolate;">
+                        Lion
+                    </li>
+
+                </ul>
+                <ul class="animal-list">
+                    <li style="color: darkgreen;">
+                        Tiger
+                    </li>
+                    <li style="color: darkmagenta;">
+                        Kangaroo
+                    </li>
+                    <li style="color: darkred;">
+                        Monkey
+                    </li>
+                    <li style="color: deeppink;">
+                        Cat
+                    </li>
+                </ul>
+            </mat-card>
+        </div>
+    </mat-card>
+</div>
+
+<div *ngIf="toggle">
+<app-animal-selection></app-animal-selection>
+</div>

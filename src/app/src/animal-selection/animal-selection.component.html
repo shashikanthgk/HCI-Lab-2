@@ -1,0 +1,41 @@
+<div *ngIf = "!bypass">
+    <mat-card class="header">
+
+        <div class="box-container">
+
+            <mat-card class="inst" style="width: 50%;">
+                <!-- instruction for the user  -->
+                <ul>
+                    <li>
+                        Select the animals that you can remember from the previous list
+                    </li>
+
+                </ul>
+
+            </mat-card>
+            <div style="display: flex;flex-direction: column; justify-content: center;align-items: center; width:100%;">
+                <div class="animal-section" id="selected-animal">
+                    <!-- this section contains the main section list -->
+                    <ul class="animal-list">
+
+                        <li class="list"
+                            [ngStyle]="{'color':animal.color,'font-weight':animal.weight,'text-shadow':animal.shadow}"
+                            *ngFor="let animal of animals_name; let i = index" (click)="setIndex(i)">
+                            {{ animal.name }}
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <button class="glow-on-hover" type="button" (click)='OnSubmit()'>FINISH THE GAME!</button>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>
+
+
+
+<div *ngIf = "bypass"> 
+<app-result [selected_animal] = "selected_animal" [animal_name] = "animals_name"  ></app-result>
+</div>

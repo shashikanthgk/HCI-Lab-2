@@ -1,0 +1,68 @@
+<mat-card class="top">
+
+    <div class="box-container">
+
+        <mat-card class="inst" style="width: 50%;">
+            <!-- instruction for the user  -->
+            <ul *ngIf="first">
+                <li>
+                    It seems you were not able to recall any of the words correctly, do you wish to restart the
+                    experiment?
+                </li>
+            </ul>
+            <ul *ngIf="second">
+                <li>
+                    As can be seen, you recalled more animals from the top and bottom position than the middle
+                    position.This result is in consonance with the Serial Position Effect. This shows the influence of
+                    Serial Position Effect on recall from a list of items
+                </li>
+
+            </ul>
+            <ul *ngIf="third">
+                <li>
+                    The recall results are not in confirmation with what the Serial Position Effect predicts. The
+                    possible reasons for interference could be
+                </li>
+                <ol>
+                    <li>
+                        Personal bias to certain words used in the list.
+                    </li>
+                    <li>
+                        Or may be beacause of the favorite animal factor
+                    </li>
+                    <li>
+                        Random selection of colors.(if this is the case, then it is suggested that you redo the test
+                        after
+                        lapse of 10 mins.)
+                    </li>
+                </ol>
+
+            </ul>
+        </mat-card>
+        <mat-card class="animal-section" style="width: 70%;">
+            <!-- this section contains the main section list -->
+            <ul class="animal-list" style="padding-top: 2rem;">
+
+
+
+                <li class="list"
+                    [ngStyle]="{'color':animal.color,'font-weight':animal.weight,'text-shadow':animal.shadow,'font-size':animal.size}"
+                    *ngFor="let animal of p_animal1; let i = index">
+                    {{ animal.name }}
+                </li>
+
+            </ul>
+            <ul class="animal-list">
+                <li class="list"
+                    [ngStyle]="{'color':animal.color,'font-weight':animal.weight,'text-shadow':animal.shadow,'font-size':animal.size}"
+                    *ngFor="let animal of p_animal2; let i = index">
+                    {{ animal.name }}
+                </li>
+
+            </ul>
+        </mat-card>
+        <div>
+            <button class="glow-on-hover" type="button" (click)="restart()">RESTART THE GAME!</button>
+        </div>
+    </div>
+</mat-card>
