@@ -1,12 +1,12 @@
 
 .animal-section{
-    padding: 2rem;
-    padding-right: 2rem;
+    padding: 0.4rem;
+    padding-right: 0.5rem;
     margin: 1vw;
     font-size: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     box-shadow: 8px 8px 4px -1px rgb(70, 68, 68), 
     0 1px 1px 0 rgba(0,0,0,1), 
     0 1px 3px 0 rgba(0,0,0,1);
@@ -39,7 +39,7 @@
     padding: 1rem;
     list-style-type:none;
     display: flex;
-    justify-content:space-around ;
+    justify-content:space-evenly ;
     flex-direction: column;
 }
 
@@ -48,7 +48,7 @@
      flex-direction: column;
     justify-content: center;
     align-items:center;
-    background-color: cadetblue;
+    background-color: rgb(0, 0, 0);
 }
 
 .box-container
@@ -75,7 +75,7 @@ li{
     margin: 2rem;   
     padding: 1rem;
     padding-right: 2.3rem;
-    background-color: rgb(223, 191, 132);
+    background-color: rgb(248, 165, 10);
     font-size: 1.2rem;
     word-wrap: break-word;
     white-space: initial;
@@ -115,18 +115,18 @@ button{
     margin: 2rem;
     font-family: 'Bree Serif', serif;
 }
-
-  .glow-on-hover {
+.glow-on-hover {
     width: 220px;
     height: 50px;
     border: none;
     outline: none;
     color: #fff;
-    background: #111;
+    background: rgb(12, 179, 190);
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    font-family: 'Bree Serif', serif;
 }
 
 .glow-on-hover:before {
@@ -147,7 +147,7 @@ button{
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: rgb(4, 167, 196)
 }
 
 .glow-on-hover:active:after {
@@ -159,14 +159,19 @@ button{
 }
 
 .glow-on-hover:after {
-    z-index: -1;
     content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
+    top: 0px;
+    left:0px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 0px);
+    height: calc(100% + 0px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
@@ -175,5 +180,4 @@ button{
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-
 

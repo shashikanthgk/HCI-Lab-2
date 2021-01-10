@@ -1,9 +1,9 @@
 
 .animal-section{
-    padding: 2rem;
-    padding-right: 2rem;
+    padding: 1rem;
+    padding-right: 0rem;
     margin: 1vw;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,15 +20,15 @@
 
    .inst2{
    
-       margin: 1rem;   
-       padding: 1rem;
+       margin: 0.1rem;   
+       padding: 0.1rem;
        padding-right: 2rem;
        font-size: 1.2rem;
        display: flex;
        flex-direction: column;
        align-items: center;
        font-family: 'Bree Serif', serif;
-       background-color: rgb(224, 115, 166);
+       background-color: rgb(201, 37, 114);
    box-shadow: 8px 8px 4px -1px rgb(70, 68, 68), 
    0 1px 1px 0 rgba(0,0,0,1), 
    0 1px 3px 0 rgba(0,0,0,1);
@@ -48,7 +48,7 @@
      flex-direction: column;
     justify-content: center;
     align-items:center;
-    background-color: cadetblue;
+    background-color: rgb(0, 0, 0);
 }
 
 .box-container
@@ -63,7 +63,7 @@
 
 li{
     white-space: nowrap;
-    padding:0.4rem;
+    padding:0.2rem;
     word-wrap: break-word;
     white-space: initial;
 
@@ -72,10 +72,10 @@ li{
 
 .inst{
 
-    margin: 2rem;   
-    padding: 1rem;
+    margin: 0.5rem;   
+    padding: 0.5rem;
     padding-right: 2.3rem;
-    background-color: rgb(223, 191, 132);
+    background-color: rgb(248, 165, 10);
     font-size: 1.2rem;
     word-wrap: break-word;
     white-space: initial;
@@ -124,8 +124,27 @@ li{
    .timer-out
    {
     margin: 2rem;
-    background-color: rgb(224, 115, 166);
+    background-color: rgb(255, 42, 141);
     box-shadow: 8px 8px 4px -1px rgb(70, 68, 68), 
     0 1px 1px 0 rgba(0,0,0,1), 
     0 1px 3px 0 rgba(0,0,0,1);
    }
+
+
+   
+
+#slide-frame{
+    left: -1020px;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}

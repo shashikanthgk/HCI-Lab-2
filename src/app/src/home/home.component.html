@@ -1,15 +1,15 @@
 <div *ngIf="!toggle">
     <div id="main">
-        <div id='first'>
+        <div>
             <!-- first page for starting the game  -->
-            <mat-card style="display: flex;flex-direction: column;align-items: center;" class="first">
+            <mat-card id="slide-frame" style="display: flex;flex-direction: column;align-items: center;" class="first">
 
                 <div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
-                    <mat-card class="inst">
+                    <mat-card class="inst" id="slide">
                         <!-- instruction for the user  -->
                         <ul>
                             <li>
-                                On the nextt screen you will be shown some set animals name
+                                On the next screen you will be shown some set animals name
                             </li>
                             <li>
                                 Try to remember set visually and mentally
@@ -35,7 +35,7 @@
                 </div>
 
                 <div>
-                    <button class="glow-on-hover" type="button" (click)="start()">START THE GAME!</button>
+                    <button id="slide-button" class="glow-on-hover" type="button" (click)="start()">START THE GAME!</button>
                 </div>
             </mat-card>
 

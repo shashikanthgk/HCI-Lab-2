@@ -12,63 +12,63 @@ export class AnimalSelectionComponent implements OnInit {
     {
       'name':'Horse',
       'color': 'blue',
-      'weight':'normal',
-      "shadow": '0px 0px #ff0000',
-
+      'weight':'lighter',
+      "shadow": '0px 0px white',
+  
     },
     {
       'name':'Monkey',
       'color': 'brown',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
 
     },
     {
       'name':'Lion',
       'color': 'crimson',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
     },
     {
       'name':'Panther',
       'color': 'peru',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
     },
     {
       'name':'Cat',
       'color': 'darkmagenta',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
     },
     {
       'name':'Panda',
       'color': 'darkgreen',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
     },
     {
       'name':'Leapord',
       'color': 'chocolate',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
     },
     {
       'name':'Tiger',
       'color': 'darkred',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
     },
     {
       'name':'Yak',
       'color': 'sienna',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
     },
     {
       'name':'Kangaroo',
       'color': 'deeppink',
-      'weight':'normal',
+      'weight':'lighter',
       "shadow": '0px 0px #ff0000',
     }
   ];
@@ -87,7 +87,7 @@ export class AnimalSelectionComponent implements OnInit {
     {
       this.selected_animal[index] = true;
       this.animals_name[index].weight = "bold";
-      this.animals_name[index].shadow = "1.5px 1.5px  black";
+      this.animals_name[index].shadow = "1px 1px  white";
     }
     else{
       this.selected_animal[index] = false;
