@@ -6,7 +6,7 @@ import { Component, OnInit,OnDestroy } from '@angular/core';
   styleUrls: ['./animal-list.component.css']
 })
 export class AnimalListComponent implements OnInit {
-  timeLeft: number = 10;
+  timeLeft: number = 1;
   interval:any;
   toggle:boolean = false;
   constructor() { }

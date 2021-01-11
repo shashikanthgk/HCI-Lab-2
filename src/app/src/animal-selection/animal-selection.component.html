@@ -1,9 +1,9 @@
 <div *ngIf = "!bypass">
-    <mat-card class="header">
+    <mat-card id = "slide-frame" class="header">
 
         <div class="box-container">
 
-            <mat-card class="inst" style="width: 70%;">
+            <mat-card id="slide" class="inst" style="width: 70%;">
                 <!-- instruction for the user  -->
                 <ul>
                     <li>
@@ -18,16 +18,16 @@
                     <!-- this section contains the main section list -->
                     <ul class="animal-list">
 
-                        <li class="list"
+                        <li   class="list"
                             [ngStyle]="{'color':animal.color,'font-weight':animal.weight,'text-shadow':animal.shadow}"
                             *ngFor="let animal of animals_name; let i = index" (click)="setIndex(i)">
-                            {{ animal.name }}
+                           <span > {{ animal.name }}</span>
                         </li>
 
                     </ul>
                 </div>
                 <div>
-                    <button class="glow-on-hover" type="button" (click)='OnSubmit()'>FINISH THE GAME!</button>
+                    <button id = "slide-button" class="glow-on-hover" type="button" (click)='OnSubmit()'>FINISH THE GAME!</button>
                 </div>
             </div>
         </div>

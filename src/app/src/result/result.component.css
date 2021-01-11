@@ -181,3 +181,70 @@ button{
     100% { background-position: 0 0; }
 }
 
+
+
+
+
+#slide{
+    left: -1020px;
+    -webkit-animation: slide 1.9s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 1.9s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+#slide-frame{
+    left: -1320px;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 0.3s;
+    animation: slide 1s forwards;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+#slide-button{
+    left: -1020px;
+    -webkit-animation: slide 1.5s forwards;
+    -webkit-animation-delay: 3s;
+    animation: slide 1.5s forwards;
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+#slide2{
+    left: -1120px;
+    -webkit-animation: slide 1.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}

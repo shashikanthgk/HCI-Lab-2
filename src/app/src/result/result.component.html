@@ -1,8 +1,8 @@
-<mat-card class="top">
+<mat-card id="slide-frame" class="top">
 
     <div class="box-container">
 
-        <mat-card class="inst" style="width: 50%;">
+        <mat-card id="slide" class="inst" style="width: 50%;">
             <!-- instruction for the user  -->
             <ul *ngIf="first">
                 <li>
@@ -39,7 +39,7 @@
 
             </ul>
         </mat-card>
-        <mat-card class="animal-section" style="width: 60vw;">
+        <mat-card id="slide2" class="animal-section" style="width: 60vw;">
             <!-- this section contains the main section list -->
             <ul class="animal-list" style="padding-top: 2rem;">
 
@@ -62,7 +62,7 @@
             </ul>
         </mat-card>
         <div>
-            <button class="glow-on-hover" type="button" (click)="restart()">RESTART THE GAME!</button>
+            <button id="slide-button" class="glow-on-hover" type="button" (click)="restart()">RESTART THE GAME!</button>
         </div>
     </div>
 </mat-card>
